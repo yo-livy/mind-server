@@ -1,0 +1,11 @@
+services:
+- type: web
+  name: mind-server
+  env: python
+  build:
+    cmd: pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput
+    pythonVersion: 3.8
+  run:
+    cmd: gunicorn django_mind_top.wsgi:application --bind 0.0.0.0:$PORT
+  envVars:
+    ...
