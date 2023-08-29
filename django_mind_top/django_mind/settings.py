@@ -83,11 +83,14 @@ WSGI_APPLICATION = 'django_mind.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mindhabbits', 
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'NAME': 'ezgchrun',
+        'USER': 'ezgchrun',
+        'PASSWORD': 'V2IPtYLxTIef-YMLiFNsoiUnHT55M5-a',
+        'HOST': 'berry.db.elephantsql.com',
         'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
 
