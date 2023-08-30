@@ -9,6 +9,3 @@ services:
     cmd: gunicorn django_mind_top.wsgi:application --bind 0.0.0.0:$PORT
   envVars:
     ...
-  staticSites:
-  - staticDir: media
-    staticMount: /media
