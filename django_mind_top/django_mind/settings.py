@@ -80,33 +80,33 @@ WSGI_APPLICATION = 'django_mind.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ezgchrun',
-        'USER': 'ezgchrun',
-        'PASSWORD': 'V2IPtYLxTIef-YMLiFNsoiUnHT55M5-a',
-        'HOST': 'berry.db.elephantsql.com',
-        'PORT': '5432',
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'postgres',
-#         'PASSWORD': 'Q8K7fL113IV63OZGoBb1',
-#         'HOST': 'database-2.c5z5zuy2x6du.us-east-1.rds.amazonaws.com',
+#         'NAME': 'ezgchrun',
+#         'USER': 'ezgchrun',
+#         'PASSWORD': 'V2IPtYLxTIef-YMLiFNsoiUnHT55M5-a',
+#         'HOST': 'berry.db.elephantsql.com',
 #         'PORT': '5432',
 #         'OPTIONS': {
 #             'sslmode': 'require',
 #         },
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'Q8K7fL113IV63OZGoBb1',
+        'HOST': 'database-2.c5z5zuy2x6du.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
+    }
+}
 
 
 
