@@ -98,6 +98,5 @@ wasabi==1.1.1
 wcwidth==0.2.6
 yarl==1.9.2
 gunicorn==20.1.0
-django-cors-headers
 
 
